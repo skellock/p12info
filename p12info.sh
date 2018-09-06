@@ -6,7 +6,7 @@ RED=`tput setaf 1`
 BOLD=`tput bold`
 DIM=`tput dim`
 RESET=`tput sgr0`
-AWK="/^-----BEGIN.*/{flag=1;next}/^-----END.*/{flag=0}flag"
+AWK="/^-----BEGIN.*/,/^-----END.*/"
 
 # --- command line arguments --------------------------------------------------
 
